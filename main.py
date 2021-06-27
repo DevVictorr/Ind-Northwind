@@ -1,9 +1,9 @@
 import psycopg2
 import datetime
 import os
-import write1
+import export1
 
-rota = write1
+rota = export1
 
 
 # Conexão com db
@@ -14,13 +14,20 @@ cur = conn.cursor()
 
 
 
-
-rota.categories()
-rota.customer_customer_demo()
-rota.customer_demographics()
-rota.customers()
-rota.employee_territories()
-
+rota.export_table.usar("categories")
+rota.export_table.usar("customer_customer_demo")
+rota.export_table.usar("customer_demographics")
+rota.export_table.usar("customers")
+rota.export_table.usar("employee_territories")
+rota.export_table.usar("employees")
+rota.export_table.usar("orders")
+rota.export_table.usar("products")
+rota.export_table.usar("region")
+rota.export_table.usar("shippers")
+rota.export_table.usar("suppliers")
+rota.export_table.usar("territories")
+rota.export_table.usar("us_states")
+rota.export_table.usar("order_details")
 
 
 
