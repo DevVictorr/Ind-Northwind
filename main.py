@@ -20,16 +20,17 @@ rota.export_table.usar("customer_demographics")
 rota.export_table.usar("customers")
 rota.export_table.usar("employee_territories")
 rota.export_table.usar("employees")
-rota.export_table.usar("orders")
 rota.export_table.usar("products")
 rota.export_table.usar("region")
 rota.export_table.usar("shippers")
 rota.export_table.usar("suppliers")
 rota.export_table.usar("territories")
 rota.export_table.usar("us_states")
-rota.export_table.usar("order_details")
 
 
+
+rota.export_table.orders("orders")
+rota.export_table.orders("order_details")
 
 
 
