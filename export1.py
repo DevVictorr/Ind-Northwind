@@ -9,15 +9,12 @@ import sqliteShow
 mostrar = sqliteShow
 
 
-
-now = datetime.now() 
-date_time = now.strftime("-%m-%d-%Y --- %H;%M;%S")
-str(date_time)
-
-
 # Conexão com db
-conn = psycopg2.connect("dbname=northwind user=postgres password=admin")
+                        #DB Nome          userName      Senha
+conn = psycopg2.connect("dbname=northwind user=postgres password=admin") 
 print("Connection established")
+
+#criando cursor
 curr = conn.cursor()
 
 
@@ -30,13 +27,18 @@ class export_table():
 
          pasta = 'C:/data/postgres/%s' %(tabela_name)
          if os.path.isdir(pasta): # verificar se diretorio ja existe
-            now = datetime.now() 
-            date_time = now.strftime("-%m-%d-%Y --- %H;%M;%S")
-            str(date_time)
-            os.mkdir("C:/data/postgres/%s/%s%s" %(tabela_name,tabela_name,date_time))
+            now = datetime.now() #Pega Time Atual
+            date_time = now.strftime("-%m-%d-%Y --- %H;%M;%S") #Salva Mes/dia/ano e Hr, Minutos e segundos
+            str(date_time) #passa a data para String
+            #cria uma pasta no diretorio Com o nome da tabela e data/horario.
+            os.mkdir("C:/data/postgres/%s/%s%s" %(tabela_name,tabela_name,date_time))  
+            #salva o caminho em uma variavel
             local1 = ("C:/data/postgres/%s/%s%s" %(tabela_name,tabela_name,date_time))
+            #comando para Copiar e colar em uma pasta
             sql3 = "COPY %s TO '%s/%s.csv' CSV HEADER;"%(tabela_name,local1,tabela_name)
             sql2 = "COPY %s TO '%s/%s.db' CSV HEADER;"%(tabela_name,local1,tabela_name)
+
+            #Executar comandos
             curr.execute(sql2)
             curr.execute(sql3)
          else:
@@ -105,7 +107,8 @@ class export_table():
              print(row)
 
 
-
+#funcao chamada no main para chamar os objetos e executar as acoes
+#cada um deles com o nome de cada tabela do DB que vai ser extraido
 def back():
 
     export_table.usar("categories")
@@ -120,8 +123,11 @@ def back():
     export_table.usar("suppliers")
     export_table.usar("territories")
     export_table.usar("us_states")
+
+    #salva .DB na pasta raiz no projeto para fazer a conexao logo depois
     export_table.orders("orders")
     export_table.orders("order_details")
     
+    #Converte e Carrega informações .db no sqlite
     mostrar.mostrar1()
     mostrar.mostrar2()

@@ -1,25 +1,16 @@
-import psycopg2
 import export1
 import time
-import sqliteShow
 
 rota = export1
-mostrar = sqliteShow
-
-# Conexão com db
-conn = psycopg2.connect("dbname=northwind user=postgres password=admin")
-print("Connection established")
-cur = conn.cursor()
-
 
 
 while True:
    
-   
+   #Chamar funcao de exportar Tabelas para DB/CSV
    rota.back()
    
-   
-   time.sleep(3) #
+   #Tempo que vai exportar novamente (criar novas pastar e arquivos)
+   time.sleep(3) #86400 segundos = 24 horas // a cada 24 horas vai  fazer novos backup
    
 
 conn.commit()
