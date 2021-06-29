@@ -1,6 +1,4 @@
 import psycopg2
-import datetime
-import os
 import export1
 import time
 import sqliteShow
