@@ -6,14 +6,14 @@ Criando novas pastas com datas exatas no  formato (Mes-Dia-Ano - Hr;Mn;Sg), Cria
 Permitindo visualizar e trabalhar com os dados para futuras analises (orders e order_details)
 
 
-# Requisitos---
+# Requisitos
 [Postgresql](https://www.postgresql.org/)
 
 [northwind.sql](https://github.com/DevVictorr/Ind-Northwind/tree/master/arquivos_necessarios)
 
 [orderdetails.csv](https://github.com/DevVictorr/Ind-Northwind/tree/master/arquivos_necessarios)
 
-# Instalação---
+# Instalação
 Baixe este repositório
 Abra um prompt de comando dentro da pasta
 Baixe as Bibliotecas, modulos, Pacotes por exemplo, "pip install psycopg2"
@@ -23,7 +23,7 @@ Postgresql- (Adicione a DB northwind.sql e orderdetails.csv ao seu Postgresql)
 Crie um diretorio **C:\data\postgres**
 
 
-# Configuração---
+# Configuração
 Primeiro temos que se atentar ao erro mais comum que é a configuração da conexão ao  banco de dados, no arquivo **(export1.py)**
 
 **dbname=**    para colocar o nome da sua DB
