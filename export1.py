@@ -10,7 +10,7 @@ mostrar = sqliteShow
 
 
 # Conexão com db
-# DB Nome          userName      Senha
+# DB   Nome // userName  // Senha
 conn = psycopg2.connect("dbname=northwind user=postgres password=admin")
 print("Connection established")
 
