@@ -18,7 +18,7 @@ Baixe este repositório
 Abra um prompt de comando dentro da pasta
 Baixe as Bibliotecas, modulos, Pacotes por exemplo, "pip install psycopg2"
 
-Postgresql- (Adicione a DB northwind.sql e orderdetails.csv ao seu Postgresql)
+Postgresql- (Adicione ao DB [northwind.sql](https://github.com/DevVictorr/Ind-Northwind/tree/master/arquivos_necessarios) e [orderdetails.csv](https://github.com/DevVictorr/Ind-Northwind/tree/master/arquivos_necessarios) ao seu Postgresql)
 
 Crie um diretorio **C:\data\postgres**
 
