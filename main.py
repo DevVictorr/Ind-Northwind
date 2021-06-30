@@ -11,7 +11,7 @@ while True:
 
     # Tempo que vai exportar novamente (criar novas pastar e arquivos)
     # 86400 segundos = 24 horas // a cada 24 horas vai  fazer novos backup
-    time.sleep(3)
+    time.sleep(86400)
 
 
 conn.commit()
