@@ -27,7 +27,7 @@ Crie um diretorio **C:\data\postgres**
 # Configuração
 Primeiro temos que se atentar ao erro mais comum que é a configuração da conexão ao  banco de dados, no arquivo **(export1.py)**
 
-**dbname=**    para colocar o nome da sua DB
+**dbname =**    para colocar o nome da sua DB
 **user =**     para colocar seu user, no meu caso é postgres
 **password =** para colocar sua senha para acessar o   db, no meu caso ficaria como abaixo:
 
