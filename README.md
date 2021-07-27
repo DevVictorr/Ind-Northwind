@@ -33,7 +33,7 @@ Primeiro temos que se atentar ao erro mais comum que é a configuração da cone
 
 -conn = psycopg2.connect("**dbname**=northwind **user**=postgres **password**=admin")
 
-Ainda no arquivo **(export1.py)** veremos a segunte **func: def back():**
+Ainda no arquivo **(export1.py)** veremos a segunte **func: DEF back():**
 Podemos alterar os nomes das tabelas que serão feitas a export/backup/conexão alterando no final do comando por exemplo:
 No caso abaixo o "categories" é o nome de uma tabela que vai ser feita a ação, no seu caso pode ser outro. 
 
