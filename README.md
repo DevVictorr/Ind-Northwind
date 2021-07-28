@@ -74,7 +74,7 @@ No def mostrar2() segue a mesma logica.
 
 Execute main.py
 
-Os dados dos .db criados podem ser visto no console com pandas PD.head, ou com o  [sqlitebrowser](https://sqlitebrowser.org/)
+Os dados dos ".db" criados podem ser visto no console com pandas PD.head, ou com o  [sqlitebrowser](https://sqlitebrowser.org/)
 
 
 # Print's
