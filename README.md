@@ -85,7 +85,7 @@ Os dados dos ".db" criados podem ser visto no console com pandas PD.head, ou com
 # Depois
 ![Depois](https://i.imgur.com/zCQD8Xd.png)
 
-# Pasta criada com horario e data
+# Pasta criada com horario e data:
 ![Pasta criada com horario e data](https://i.imgur.com/43JaJiK.png)
 
 # Arquivos criados
