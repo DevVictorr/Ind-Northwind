@@ -16,7 +16,7 @@ nota: [Prints](https://github.com/DevVictorr/Ind-Northwind#prints)
 
 # Instalação
 Baixe este repositório
-Abra um prompt de comando dentro da pasta
+Abra um prompt de comando dentro da pasta.
 Baixe as Bibliotecas, modulos, Pacotes por exemplo, "pip install psycopg2"
 
 Postgresql- (Adicione ao DB [northwind.sql](https://github.com/DevVictorr/Ind-Northwind/tree/master/arquivos_necessarios) e [orderdetails.csv](https://github.com/DevVictorr/Ind-Northwind/tree/master/arquivos_necessarios) ao seu Postgresql)
