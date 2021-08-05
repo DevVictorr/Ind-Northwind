@@ -48,7 +48,7 @@ export_table.usar("**categories**")
  
  export_table.orders("**orders**")
  
- export_table.orders("**order_details**")
+ export_table.orders("**order_details**").
  
  
 Temos o arquivo **(main.py)** temos a seguinte linha:
