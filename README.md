@@ -15,7 +15,7 @@ nota: [Prints](https://github.com/DevVictorr/Ind-Northwind#prints)
 [orderdetails.csv](https://github.com/DevVictorr/Ind-Northwind/tree/master/arquivos_necessarios)
 
 # Instalação
-Baixe este repositório
+Baixe este repositório.
 Abra um prompt de comando dentro da pasta.
 Baixe as Bibliotecas, modulos, Pacotes por exemplo, "pip install psycopg2"
 
