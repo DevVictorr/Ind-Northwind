@@ -2,7 +2,7 @@
 
 Permite que você faça backup de tabelas de um DB como em nosso exemplo vai ser usado Northwind no Postgresql a cada "X" tempo por exemplo: a cada hora, dia, segundos etc...
 
-Criando novas pastas com datas exatas no  formato (Mes-Dia-Ano - Hr;Mn;Sg), Criando em especial 2 Tabelas especificas na pasta Raiz do projeto em .db para fazer conexão com sqlite3.
+Criando novas pastas com datas exatas no  formato (Mes-Dia-Ano - Hr;Mn;Sg),, Criando em especial 2 Tabelas especificas na pasta Raiz do projeto em .db para fazer conexão com sqlite3.
 Permitindo visualizar e trabalhar com os dados para futuras analises (orders e order_details).
 
 nota: [Prints](https://github.com/DevVictorr/Ind-Northwind#prints)
