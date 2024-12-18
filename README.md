@@ -1,4 +1,4 @@
-# Ind-Northwind
+# Automação Banco de dados
 
 Permite que você faça backup de tabelas de um DB como em nosso exemplo vai ser usado Northwind no Postgresql a cada "X" tempo por exemplo: a cada hora, dia, segundos etc...
 
